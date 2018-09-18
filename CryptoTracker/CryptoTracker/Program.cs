@@ -1,0 +1,9 @@
+﻿namespace CryptoTracker
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+        }
+    }
+}
