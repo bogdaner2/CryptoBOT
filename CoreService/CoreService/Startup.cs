@@ -13,6 +13,7 @@ namespace CoreService
     {
         public Startup(IConfiguration configuration)
         {
+
             Configuration = configuration;
         }
 
