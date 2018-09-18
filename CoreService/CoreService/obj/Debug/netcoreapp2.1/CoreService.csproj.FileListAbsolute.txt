@@ -9,3 +9,7 @@ C:\Users\olexi\Desktop\CryptoBOT\CoreService\CoreService\obj\Debug\netcoreapp2.1
 C:\Users\olexi\Desktop\CryptoBOT\CoreService\CoreService\obj\Debug\netcoreapp2.1\CoreService.AssemblyInfoInputs.cache
 C:\Users\olexi\Desktop\CryptoBOT\CoreService\CoreService\obj\Debug\netcoreapp2.1\CoreService.AssemblyInfo.cs
 C:\Users\olexi\Desktop\CryptoBOT\CoreService\CoreService\obj\Debug\netcoreapp2.1\CoreService.RazorTargetAssemblyInfo.cache
+C:\Users\olexi\Desktop\CryptoBOT\CoreService\CoreService\bin\Debug\netcoreapp2.1\CoreService.pdb
+C:\Users\olexi\Desktop\CryptoBOT\CoreService\CoreService\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
+C:\Users\olexi\Desktop\CryptoBOT\CoreService\CoreService\obj\Debug\netcoreapp2.1\CoreService.dll
+C:\Users\olexi\Desktop\CryptoBOT\CoreService\CoreService\obj\Debug\netcoreapp2.1\CoreService.pdb

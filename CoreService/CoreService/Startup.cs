@@ -1,11 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using CoreService.Models.Entities;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -31,7 +28,7 @@ namespace CoreService
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-
+            ConfigureBot(Configuration, services);
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
@@ -45,10 +42,8 @@ namespace CoreService
             else
             {
                 app.UseExceptionHandler("/Home/Error");
-                app.UseHsts();
             }
 
-            app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
 
@@ -58,6 +53,15 @@ namespace CoreService
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+        }
+
+
+        public void ConfigureBot(IConfiguration Configuration, IServiceCollection services)
+        {
+            var botSection = Configuration.GetSection("BotSettings");
+            var apikey = botSection["ApiKey"];
+            var name = botSection["Name"];
+            services.AddSingleton<Bot>(options => new Bot(apikey, name));
         }
     }
 }
