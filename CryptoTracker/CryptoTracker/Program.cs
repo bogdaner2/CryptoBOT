@@ -11,16 +11,7 @@ namespace CryptoTracker
 
         static void Main(string[] args)
         {
-            botClient.OnMessage += BotOnMessageReceived;
-            botClient.StartReceiving(new[] { UpdateType.Message });
-            WriteLine("Start working...");
-            ReadLine();
-        }
-        private static async void BotOnMessageReceived(object sender, MessageEventArgs messageEventArgs)
-        {
-            var message = messageEventArgs.Message;
-            WriteLine("Recieved message: " + message.Text);
-            await botClient.SendTextMessageAsync(message.Chat.Id, message.Text);
+            WriteLine("Hello there. I'm dumb and can't really do nothing yet, but I'm implemented in another branch!")
         }
     }
 }
