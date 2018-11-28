@@ -7,11 +7,9 @@ namespace CryptoTracker
 {
     class Program
     {
-        static 
-
         static void Main(string[] args)
         {
-         
+            WriteLine("My text was changed while resolving conflicts!");
         }
     }
 }

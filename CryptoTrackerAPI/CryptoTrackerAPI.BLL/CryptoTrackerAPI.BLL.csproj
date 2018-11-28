@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="7.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Services\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CryptoTrackerAPI.DAL\CryptoTrackerAPI.DAL.csproj" />
+    <ProjectReference Include="..\CryptoTrackerAPI.Shared\CryptoTrackerAPI.Shared.csproj" />
+  </ItemGroup>
+
+</Project>
